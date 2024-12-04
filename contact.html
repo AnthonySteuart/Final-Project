@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Anthony Steuart">
+    <meta name="description" content="This page is to gather contact information about the user when they check in.">
+    <title>Gipfelglück | Contact</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Gipfelglück</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#accommodation">Accommodation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+        <img src="images/swiss-valley.jpg" alt="A valley in the nation of Switzerland, with the Alps and lots of trees.">
+    </div>
+
+    <!-- Main -->
+    <main>
+        <h2>Contact Us</h2>
+        <p>
+            Please reach out to us with any questions or concerns.<br>
+            We are happy to help you plan your dream vacation with us!<br>
+            Required fields marked with a (<span class="required">*</span>).
+        </p>
+
+        <img src="images/swiss-sunset.jpg" alt="A sunset over a lake in Switzerland, with mountains and trees in the background.">
+
+        <!-- Form -->
+        <section id="form">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <div class="left">
+                    <div>
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number<span class="required">*</span></label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div>
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <fieldset>
+                        <legend>Preferred Method of Contact</legend>
+                        <div>
+                            <input type="radio" name="contact-pref" id="pref-email" value="email" checked>
+                            <label for="pref-email">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="contact-pref" id="pref-phone" value="phone">
+                            <label for="pref-phone">Phone</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="submit" value="Submit Form">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2023 - Gipfelglück</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
